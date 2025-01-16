@@ -1,0 +1,15 @@
+<suite name="Mytestsuite">
+<parameter name="browser" value="Chrome"></parameter>
+<listeners>
+<listener class-name="listeners.Listeners"></listener>
+
+</listeners>
+	<test threadcount="3" name="myTest">
+		
+		<classes>
+	<class name="testcases.ManageCategoryTest"></class>
+	
+</classes>
+		
+	</test>
+</suite>

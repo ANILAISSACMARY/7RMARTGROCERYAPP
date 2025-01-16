@@ -1,0 +1,19 @@
+<suite name="Parallel testing" parallel="tests" thread-count="2">
+	<parameter name="browser" value="Chrome"></parameter>
+	<test threadcount="3" name="Test1">
+		<classes>
+			<class name="testcases.ManageCategoryTest"></class>
+		</classes>
+
+	</test>
+	<test threadcount="3" name="Test2">
+		<parameter name="browser" value="Edge"></parameter>
+		<classes>
+			<class name="testcases.CategoryTest"></class>
+
+		</classes>
+
+	
+
+	</test>
+</suite>
