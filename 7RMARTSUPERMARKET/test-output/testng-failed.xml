@@ -7,16 +7,13 @@
   </listeners>
   <test thread-count="5" name="myTest(failed)">
     <classes>
-      <class name="testcases.LoginPageTest">
+      <class name="testcases.ManageContactTest">
         <methods>
-          <include name="loginWithInValidUsernameAndInvalidPassword"/>
-          <include name="loginWithValidCredentials"/>
-          <include name="loginWithInvalidUsernameAndValidPassword" invocation-numbers="2"/>
           <include name="driverQuit"/>
-          <include name="loginWithValidUsernameAndInvalidPassword"/>
           <include name="initializebrowser"/>
+          <include name="verifyDetailsUpdationPossibleInManageContactPage"/>
         </methods>
-      </class> <!-- testcases.LoginPageTest -->
+      </class> <!-- testcases.ManageContactTest -->
     </classes>
   </test> <!-- myTest(failed) -->
 </suite> <!-- Failed suite [Mytestsuite] -->

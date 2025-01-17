@@ -3,16 +3,21 @@
 <listeners>
 <listener class-name="listeners.Listeners"></listener>
 
-</listeners>
+   </listeners>
 	<test threadcount="3" name="myTest">
 		
-		<classes>
+	<classes>
+	<class name="testcases.CategoryTest"></class>
 	<class name="testcases.LoginPageTest"></class>
-	<methods >
-	<include name="loginWithInValidUsernameAndInvalidPassword"></include>
-	</methods>
+	<class name="testcases.ManageCategoryTest"></class>
+	<class name="testcases.ManageContactTest"></class>
+	<class name="testcases.ManageFooterTextTest"></class>
+	<class name="testcases.ManageGiftAndVouchersTest"></class>
+	<class name="testcases.ManageNewsTest"></class>
+	<class name="testcases.SubCategoryTest"></class>
+
 	
-</classes>
+    </classes>
 		
 	</test>
-</suite>
+    </suite>

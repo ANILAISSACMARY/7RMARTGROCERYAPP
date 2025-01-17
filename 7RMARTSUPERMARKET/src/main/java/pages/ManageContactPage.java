@@ -4,12 +4,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.GenerallUtilities;
+import utilities.WaitUtilities;
 
 public class ManageContactPage {
 	
 	
 WebDriver driver;
 GenerallUtilities gu=new GenerallUtilities();
+WaitUtilities   wu=new WaitUtilities();
 
 public ManageContactPage(WebDriver driver)
 
@@ -23,7 +25,7 @@ public ManageContactPage(WebDriver driver)
 @FindBy(xpath="//input[@id='del_limit']") WebElement deliverychargefield;
 @FindBy(xpath="//input[@id='email']") WebElement emailidfield;
 @FindBy(xpath="//textarea[@placeholder='Enter the Address']") WebElement addressfield;
-@FindBy(xpath="//button[text()=' Update']")WebElement updatebutton;
+@FindBy(xpath="//button[@name='Update']")WebElement updatebutton;
 @FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement alertmessage;
 
 public ManageContactPage clickOnActionButton()
@@ -71,8 +73,10 @@ public ManageContactPage enterDeliveryCharge()
 public ManageContactPage clickOnUpdateButton()
 	{ 
 	gu.scrollToElement(driver, updatebutton);
-	  updatebutton.click();
-	  return this;
+	wu.waitUntilElementIsVisible(driver, updatebutton);
+	gu.hoverOverElement(driver, updatebutton);
+	updatebutton.click();
+	return this;
 	}
 	
 public boolean isAlertMessageDisplayed()
