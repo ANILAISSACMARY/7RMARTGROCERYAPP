@@ -7,7 +7,10 @@
 	<test threadcount="3" name="myTest">
 		
 		<classes>
-	<class name="testcases.ManageCategoryTest"></class>
+	<class name="testcases.LoginPageTest"></class>
+	<methods >
+	<include name="loginWithInValidUsernameAndInvalidPassword"></include>
+	</methods>
 	
 </classes>
 		

@@ -13,8 +13,7 @@ public class SubCategoryTest extends BaseClass{
 	HomePage hp;
 	SubCategoryPage sp;
 	
-	
-  @Test
+ @Test
   public void VerifyAddNewSubCategoryWithValidDetails() throws IOException {
 	  
 	  lp=new LoginPage(driver);

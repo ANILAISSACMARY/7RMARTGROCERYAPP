@@ -1,67 +1,57 @@
 package testcases;
-
-import org.testng.annotations.Test;
-
 import constants.Constants;
 import utilities.ScreenshotUtility;
 import utilities.WaitUtilities;
-
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-
 public class BaseClass {
-	
-	public WebDriver driver;
-	Properties prop;
-	FileInputStream fs;
-	WaitUtilities waitutility=new WaitUtilities();
-  
- 
+
+public WebDriver driver;
+Properties prop;
+FileInputStream fs;
+WaitUtilities waitutility=new WaitUtilities();
   
   @BeforeMethod(alwaysRun = true)
   @Parameters("browser")
   public void initializebrowser(String browser) throws Exception {
 	  
-	  prop=new Properties();
-	  fs=new FileInputStream(Constants.CONFIGFILE);
-	  prop.load(fs);
+  prop=new Properties();
+  fs=new FileInputStream(Constants.CONFIGFILE);
+  prop.load(fs);
 	  
-	  if(browser.equalsIgnoreCase("Chrome"))
-			  {
+if(browser.equalsIgnoreCase("Chrome"))
+ {
 		  driver=new ChromeDriver();
 		  
-			  }
+ }
 	  
-	else if(browser.equalsIgnoreCase("Edge"))
+else if(browser.equalsIgnoreCase("Edge"))
+	
 	{
 		driver=new EdgeDriver();
 	}
-	else if(browser.equalsIgnoreCase("Firefox"))
+else if(browser.equalsIgnoreCase("Firefox"))
 	{
 		driver=new FirefoxDriver();
 	}
-	else
+else
 	{
 		throw new Exception("invalid Browser");
 	}
 	  
 	 driver.get(prop.getProperty("url"));
 	// driver.get(" https://groceryapp.uniqassosiates.com/admin/login");
-	  
-	 // driver.manage().window().maximize();
-	  
-	  waitutility.implicitylyWait(driver);
+	// driver.manage().window().maximize();
+	   waitutility.implicitylyWait(driver);
 	  
   }
 

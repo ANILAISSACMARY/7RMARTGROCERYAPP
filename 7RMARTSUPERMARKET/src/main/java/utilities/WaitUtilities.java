@@ -18,7 +18,6 @@ public class WaitUtilities {
 	
 	public void fluentWaitElements(WebDriver driver, WebElement element, String attribute, String attributeValue,int total)
 	
-	
 	{
 		Wait<WebDriver> fluentWait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(total))
 				.pollingEvery(Duration.ofSeconds(Fluentwait)).ignoring(NoSuchElementException.class);
@@ -28,8 +27,6 @@ public class WaitUtilities {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Explicitwait));
 		wait.until(ExpectedConditions.alertIsPresent());
 	}
-	
-	
 	
 	public void waitUntilElementIsVisible(WebDriver driver, WebElement element)
 	{ WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Explicitwait));

@@ -14,13 +14,13 @@ public class CategoryTest extends BaseClass {
 	HomePage hp;
 	CategoryPage cp;
  @Test(groups="smoke")
- public void verifySearchUnderCategoryPage() throws IOException 
+ public void verifyCategoryItemSearchIsPossible() throws IOException 
  {
 	 lp=new LoginPage(driver);
 	 hp=lp.loginByUsingExcelData();
 	 cp=hp.clickOnCategoryButton().clickOnSearchButton().enterCategoryName().clickOnSearchButton2();
      boolean expectedresult=true;
      boolean actualresult=cp.resultNotFoundMessageIsDisplayed();
-     Assert.assertEquals(expectedresult, actualresult,Constants.CP_verifySearchUnderCategoryPage);
+     Assert.assertEquals(expectedresult, actualresult,Constants.CP_verifyCategoryItemSearchIsPossible);
   }
 }

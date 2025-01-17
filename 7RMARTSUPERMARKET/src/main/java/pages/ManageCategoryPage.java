@@ -1,21 +1,12 @@
 package pages;
 
-import java.time.Duration;
-
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
 import utilities.Fileuploadutility;
 import utilities.GenerallUtilities;
 import utilities.WaitUtilities;
-
-
 
 public class ManageCategoryPage {
 	
@@ -23,16 +14,11 @@ public class ManageCategoryPage {
 	GenerallUtilities gu=new GenerallUtilities();
 	WaitUtilities   wu=new WaitUtilities();
 	Fileuploadutility fu=new Fileuploadutility();
-	
-	
-	
 	public ManageCategoryPage(WebDriver driver)
 	{ this.driver=driver;
 	PageFactory.initElements(driver, this);
 		
 	}
-
-
 @FindBy(xpath="//a[text()=' New']") WebElement newbutton;
 @FindBy(xpath="//input[@placeholder='Enter the Category']")WebElement categoryfield;
 @FindBy(xpath="//li[@id='134-selectable']")WebElement  selectgroupsfield;
@@ -65,8 +51,6 @@ public ManageCategoryPage clickOnChooseFile()
 	fu.fileuploadSendkeys(choosefilefield, "C:\\Users\\VICTUS\\OneDrive\\Desktop\\driedfruits.jpg");
     return this;
 }
-
-	
 
 public ManageCategoryPage selectTopMenuRadioButton()
 

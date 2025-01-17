@@ -26,8 +26,6 @@ public class ManageFooterTextPage {
 	@FindBy(xpath="//button[@name='Update']") WebElement updatebutton;
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement alertmessage;
 	
-	
-	
 	public ManageFooterTextPage clickOnActionIcon()
 	{ 
 		actionfield.click();

@@ -18,12 +18,9 @@ public class LoginPage {
 	{this.driver=driver;
 	
 	PageFactory.initElements(driver, this);
-	
-	
 	}
 	
 	@FindBy(xpath="//input[@name='username']" )WebElement usernamefield; ;
-	
 	@FindBy(xpath="//input[@name='password']")WebElement passwordfield;
 	@FindBy(xpath="//button[text()='Sign In']") WebElement signinbutton;
 	@FindBy(xpath="//span[text()='7rmart supermarket']") WebElement homepage;

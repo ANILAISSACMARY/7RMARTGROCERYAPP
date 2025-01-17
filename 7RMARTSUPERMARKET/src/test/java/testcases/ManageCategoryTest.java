@@ -15,7 +15,7 @@ LoginPage lp;
 HomePage hp;
 ManageCategoryPage mp;
   @Test
-  public void createNewItemUnderManageCategoryPage() throws IOException
+  public void verifyNewItemCreationPossibleInManageCategoryPage() throws IOException
   {
  lp=new LoginPage(driver);
 hp=lp.loginByUsingExcelData();
@@ -23,6 +23,6 @@ mp=hp.clickOnManageCategoryButton().clickOnNewButton().enterCategoryName().selec
 .clickOnChooseFile().selectTopMenuRadioButton().selectLeftMenuButton().clickOnSaveButton();
 boolean expectedresult=true;
 boolean actualresult=mp.alertMessageIsDisplayed();
-Assert.assertEquals(expectedresult, actualresult,Constants.MP_createNewItemUnderManageCategoryPage);
+Assert.assertEquals(expectedresult, actualresult,Constants.MP_verifyNewItemCreationPossibleInManageCategoryPage);
   }
 }

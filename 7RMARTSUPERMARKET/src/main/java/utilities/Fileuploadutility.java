@@ -31,7 +31,7 @@ public WebDriver driver;
 	    WebElement choosefile=driver.findElement(By.xpath("//input[@id='uploadfile_0']"));
 		obj.moveToElement(choosefile).click().perform();
 		
-		StringSelection ss=new StringSelection("C:\\Users\\DELL\\Pictures\\Screenshots\\Screenshot 2024-07-04 193813.png");
+		StringSelection ss=new StringSelection("filepath");
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss,null);
 		Robot robot= new Robot();
 		robot.delay(500);

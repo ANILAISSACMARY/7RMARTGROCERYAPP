@@ -15,14 +15,14 @@ public class ManageContactTest extends BaseClass {
 	HomePage hp;
 	ManageContactPage mcp;
   @Test
-  public void updateManageContactPage() throws IOException {
+  public void verifyDetailsUpdationPossibleInManageContactPage() throws IOException {
 	  lp=new LoginPage(driver);
 	  hp=lp.loginByUsingExcelData();
 	  mcp=hp.clickOnManageContactButton().clickOnActionButton().enterPhoneNumberInField()
 	  .enterEmailId().enterAddress().enterDeliveryTime().enterDeliveryCharge().clickOnUpdateButton();
 	  boolean expectedresult=true;
 	  boolean actualresult=mcp.isAlertMessageDisplayed();
-	  Assert.assertEquals(expectedresult, actualresult,Constants.MCP_updateManageContactPage);
+	  Assert.assertEquals(expectedresult, actualresult,Constants.MCP_verifyDetailsUpdationPossibleInManageContactPage);
 	  
 	  
 	  

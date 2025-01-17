@@ -13,7 +13,7 @@ public class ManageGiftAndVouchersTest extends BaseClass{
 	HomePage hp;
 	ManageGiftAndVouchersPage mgvp;
   @Test
-  public void createUserDetailsUnderManageGiftVoucherPage() throws IOException {
+  public void verifyUserDetailsCreationPossibleInManageGiftVoucherPage() throws IOException {
 	  
 	  
 	  lp=new LoginPage(driver);
@@ -22,17 +22,17 @@ public class ManageGiftAndVouchersTest extends BaseClass{
 	  .enterPassword() .selectusertype().clickOnSaveButton();	
 	  boolean expectedresult=true;
 	  boolean actualresult=mgvp.isAlertMessageIsDisplayed();
-	  Assert.assertEquals(expectedresult, actualresult,Constants.MGVP_createUserDetailsUnderManageGiftVoucherPage);
+	  Assert.assertEquals(expectedresult, actualresult,Constants.MGVP_verifyUserDetailsCreationPossibleInManageGiftVoucherPage);
   }
   
   @Test
-  public void searchAdminUsers() throws IOException {
+  public void verifySearchOfAdminUsersPossible() throws IOException {
 	  lp=new LoginPage(driver);
 	  hp=lp.loginByUsingExcelData();
 	  mgvp=hp.clickOnManageGiftVoucherButton().clickOnMoreInfo().clickOnSearchButton().enterUserNameOnSearch()
 	  .selectTheUserType().clickOnSearchButton2();
 	  boolean expectedresult=true;
 	  boolean actualresult=mgvp.isResultNotFoundMessageIsDisplayed();
-	  Assert.assertEquals(expectedresult, actualresult,Constants.MGVP_searchAdminUsers);
+	  Assert.assertEquals(expectedresult, actualresult,Constants.MGVP_verifySearchOfAdminUsersPossible);
 	  	  }
 }

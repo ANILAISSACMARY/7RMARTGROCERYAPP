@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-15T20:10:57 IST" name="Grouping" finished-at="2025-01-15T20:11:13 IST" duration-ms="15729">
+  <suite started-at="2025-01-17T14:38:51 IST" name="Mytestsuite" finished-at="2025-01-17T14:38:56 IST" duration-ms="4277">
     <groups>
-      <group name="smoke">
-        <method signature="CategoryTest.verifySearchUnderCategoryPage()[pri:0, instance:testcases.CategoryTest@34e9fd99]" name="verifySearchUnderCategoryPage" class="testcases.CategoryTest"/>
-        <method signature="ManageNewsTest.enterNewsUnderManageNewsPage()[pri:0, instance:testcases.ManageNewsTest@73a1e9a9]" name="enterNewsUnderManageNewsPage" class="testcases.ManageNewsTest"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-01-15T20:10:57 IST" name="myTest" finished-at="2025-01-15T20:11:13 IST" duration-ms="15729">
-      <class name="testcases.CategoryTest">
-        <test-method is-config="true" signature="initializebrowser(java.lang.String)[pri:0, instance:testcases.CategoryTest@34e9fd99]" started-at="2025-01-15T20:11:06 IST" name="initializebrowser" finished-at="2025-01-15T20:11:10 IST" duration-ms="3951" status="PASS">
+    <test started-at="2025-01-17T14:38:51 IST" name="myTest" finished-at="2025-01-17T14:38:56 IST" duration-ms="4277">
+      <class name="testcases.LoginPageTest">
+        <test-method is-config="true" signature="initializebrowser(java.lang.String)[pri:0, instance:testcases.LoginPageTest@169bb4dd]" started-at="2025-01-17T14:38:51 IST" name="initializebrowser" finished-at="2025-01-17T14:38:55 IST" duration-ms="3378" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,50 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializebrowser -->
-        <test-method signature="verifySearchUnderCategoryPage()[pri:0, instance:testcases.CategoryTest@34e9fd99]" started-at="2025-01-15T20:11:10 IST" name="verifySearchUnderCategoryPage" finished-at="2025-01-15T20:11:13 IST" duration-ms="3381" status="PASS">
+        <test-method signature="loginWithInValidUsernameAndInvalidPassword()[pri:0, instance:testcases.LoginPageTest@169bb4dd]" started-at="2025-01-17T14:38:55 IST" name="loginWithInValidUsernameAndInvalidPassword" finished-at="2025-01-17T14:38:55 IST" duration-ms="843" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySearchUnderCategoryPage -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.CategoryTest@34e9fd99]" started-at="2025-01-15T20:11:13 IST" name="driverQuit" finished-at="2025-01-15T20:11:13 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- loginWithInValidUsernameAndInvalidPassword -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTest@169bb4dd]" started-at="2025-01-17T14:38:56 IST" name="driverQuit" finished-at="2025-01-17T14:38:56 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifySearchUnderCategoryPage status=SUCCESS method=CategoryTest.verifySearchUnderCategoryPage()[pri:0, instance:testcases.CategoryTest@34e9fd99] output={null}]]]>
+                <![CDATA[[TestResult name=loginWithInValidUsernameAndInvalidPassword status=SUCCESS method=LoginPageTest.loginWithInValidUsernameAndInvalidPassword()[pri:0, instance:testcases.LoginPageTest@169bb4dd] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverQuit -->
-      </class> <!-- testcases.CategoryTest -->
-      <class name="testcases.ManageNewsTest">
-        <test-method is-config="true" signature="initializebrowser(java.lang.String)[pri:0, instance:testcases.ManageNewsTest@73a1e9a9]" started-at="2025-01-15T20:10:57 IST" name="initializebrowser" finished-at="2025-01-15T20:11:01 IST" duration-ms="4020" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializebrowser -->
-        <test-method signature="enterNewsUnderManageNewsPage()[pri:0, instance:testcases.ManageNewsTest@73a1e9a9]" started-at="2025-01-15T20:11:01 IST" name="enterNewsUnderManageNewsPage" finished-at="2025-01-15T20:11:06 IST" duration-ms="4287" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterNewsUnderManageNewsPage -->
-        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testcases.ManageNewsTest@73a1e9a9]" started-at="2025-01-15T20:11:06 IST" name="driverQuit" finished-at="2025-01-15T20:11:06 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=enterNewsUnderManageNewsPage status=SUCCESS method=ManageNewsTest.enterNewsUnderManageNewsPage()[pri:0, instance:testcases.ManageNewsTest@73a1e9a9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- driverQuit -->
-      </class> <!-- testcases.ManageNewsTest -->
+      </class> <!-- testcases.LoginPageTest -->
     </test> <!-- myTest -->
-  </suite> <!-- Grouping -->
+  </suite> <!-- Mytestsuite -->
 </testng-results>
