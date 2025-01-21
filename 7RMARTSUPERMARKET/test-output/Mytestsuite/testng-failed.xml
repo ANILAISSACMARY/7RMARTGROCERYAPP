@@ -7,13 +7,14 @@
   </listeners>
   <test thread-count="5" name="myTest(failed)">
     <classes>
-      <class name="testcases.ManageContactTest">
+      <class name="testcases.ManageCategoryTest">
         <methods>
           <include name="driverQuit"/>
+          <include name="verifyUserIsAbleToAddNewCategoryWithValidDetails"/>
+          <include name="verifyUserIsAbleToSearchNonExistingItem"/>
           <include name="initializebrowser"/>
-          <include name="verifyDetailsUpdationPossibleInManageContactPage"/>
         </methods>
-      </class> <!-- testcases.ManageContactTest -->
+      </class> <!-- testcases.ManageCategoryTest -->
     </classes>
   </test> <!-- myTest(failed) -->
 </suite> <!-- Failed suite [Mytestsuite] -->

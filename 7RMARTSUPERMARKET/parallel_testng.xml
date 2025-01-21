@@ -9,7 +9,7 @@
 	<test threadcount="3" name="Test2">
 		<parameter name="browser" value="Edge"></parameter>
 		<classes>
-			<class name="testcases.CategoryTest"></class>
+			<class name="testcases.ManageNews"></class>
 
 		</classes>
 

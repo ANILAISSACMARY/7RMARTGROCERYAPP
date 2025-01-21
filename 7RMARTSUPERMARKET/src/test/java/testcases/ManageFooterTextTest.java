@@ -16,7 +16,7 @@ public class ManageFooterTextTest extends BaseClass{
 	ManageFooterTextPage mfp;
 	
   @Test
-  public void verifyDetailsUpdationPossiblInManageFooterTextPage() throws IOException {
+  public void verifyUserIsAbleToUpdateFooterTextWithValidDetails() throws IOException {
 	  
 	  lp=new LoginPage(driver);
 	  hp=lp.loginByUsingExcelData();
@@ -24,7 +24,7 @@ public class ManageFooterTextTest extends BaseClass{
 	  .enterPhoneNumber().ClickOnUpdateButton();
 	  boolean expectedresult=true;
 	  boolean actualresult=mfp.isAlertMessageDisplayed();
-	  Assert.assertEquals(expectedresult, actualresult,Constants.MFP_verifyDetailsUpdationPossiblInManageFooterTextPage);
+	  Assert.assertEquals(expectedresult, actualresult,Constants.MFP_verifyUserIsAbleToUpdateFooterTextWithValidDetails);
 	 
   }
 }

@@ -14,7 +14,7 @@ public class SubCategoryTest extends BaseClass{
 	SubCategoryPage sp;
 	
  @Test
-  public void VerifyAddNewSubCategoryWithValidDetails() throws IOException {
+  public void verifyUserIsAbleToAddNewSubCategoryWithValidDetails() throws IOException {
 	  
 	  lp=new LoginPage(driver);
 	  hp=lp.loginByUsingExcelData();
@@ -22,12 +22,12 @@ public class SubCategoryTest extends BaseClass{
 	  .chooseFileImage().clickOnSaveButton();
 	  boolean expectedresult=true;
 	  boolean actualresult=sp.isAlertMessageDisplayed();
-	  Assert.assertEquals(expectedresult, actualresult,Constants.SP_VerifyAddNewSubCategoryWithValidDetails);
+	  Assert.assertEquals(expectedresult, actualresult,Constants.SP_verifyUserIsAbleToAddNewSubCategoryWithValidDetails);
 	  
 	  	   }
-  @Test
   
-  public void VerifySubCategoryItemSearchPossible() throws IOException
+ @Test
+  public void verifyUserIsAbleToSearchNonExistingSubCategoryItem() throws IOException
   {
 	  
 	  lp=new LoginPage(driver);
@@ -35,7 +35,7 @@ public class SubCategoryTest extends BaseClass{
 	  sp=hp.clickOnSubCategoryButton().clickOnSearchButton().enterTheSearchItems().clickOnSearchButton2();
 	  boolean expectedresult=true;
 	  boolean actualresult=sp.isResultNotFoundMessageDisplayed();
-	  Assert.assertEquals(expectedresult, actualresult,Constants.SP_VerifySubCategoryItemSearchPossible);
+	  Assert.assertEquals(expectedresult, actualresult,Constants.SP_verifyUserIsAbleToSearchNonExistingSubCategoryItem);
 	
 	  
   

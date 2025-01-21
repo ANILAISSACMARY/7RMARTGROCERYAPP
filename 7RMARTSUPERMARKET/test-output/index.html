@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,12 @@
                     <div class="method-list-content passed suite-Mytestsuite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Mytestsuite" title="testcases.ManageContactTest" class="method navigator-link" hash-for-method="verifyDetailsUpdationPossibleInManageContactPage">verifyDetailsUpdationPossibleInManageContactPage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Mytestsuite" title="testcases.SubCategoryTest" class="method navigator-link" hash-for-method="verifyUserIsAbleToAddNewSubCategoryWithValidDetails">verifyUserIsAbleToAddNewSubCategoryWithValidDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Mytestsuite" title="testcases.SubCategoryTest" class="method navigator-link" hash-for-method="verifyUserIsAbleToSearchNonExistingSubCategoryItem">verifyUserIsAbleToSearchNonExistingSubCategoryItem</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Mytestsuite -->
@@ -121,14 +126,21 @@
           <div class="suite-Mytestsuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.ManageContactTest</span>
+              <span class="class-name">testcases.SubCategoryTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyDetailsUpdationPossibleInManageContactPage">
-                  </a> <!-- verifyDetailsUpdationPossibleInManageContactPage -->
-                  <span class="method-name">verifyDetailsUpdationPossibleInManageContactPage</span>
+                  <a name="verifyUserIsAbleToAddNewSubCategoryWithValidDetails">
+                  </a> <!-- verifyUserIsAbleToAddNewSubCategoryWithValidDetails -->
+                  <span class="method-name">verifyUserIsAbleToAddNewSubCategoryWithValidDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserIsAbleToSearchNonExistingSubCategoryItem">
+                  </a> <!-- verifyUserIsAbleToSearchNonExistingSubCategoryItem -->
+                  <span class="method-name">verifyUserIsAbleToSearchNonExistingSubCategoryItem</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -149,7 +161,7 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;myTest&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.ManageContactTest&quot;/&gt;
+      &lt;class name=&quot;testcases.SubCategoryTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- myTest --&gt;
 &lt;/suite&gt; &lt;!-- Mytestsuite --&gt;
@@ -189,16 +201,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyDetailsUpdationPossibleInManageContactPage')
-data.setCell(0, 2, 'testcases.ManageContactTest')
-data.setCell(0, 3, 3884);
+data.setCell(0, 1, 'verifyUserIsAbleToAddNewSubCategoryWithValidDetails')
+data.setCell(0, 2, 'testcases.SubCategoryTest')
+data.setCell(0, 3, 6173);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyUserIsAbleToSearchNonExistingSubCategoryItem')
+data.setCell(1, 2, 'testcases.SubCategoryTest')
+data.setCell(1, 3, 3732);
 window.suiteTableData['Mytestsuite']= { tableData: data, tableDiv: 'times-div-Mytestsuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Mytestsuite">
               </div> <!-- times-div-Mytestsuite -->
             </div> <!-- times-div -->
@@ -224,18 +240,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.ManageContactTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.SubCategoryTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initializebrowser(Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyDetailsUpdationPossibleInManageContactPage</span>
-                <span class="method-start">3213 ms</span>
+                <span class="method-name">verifyUserIsAbleToAddNewSubCategoryWithValidDetails</span>
+                <span class="method-start">3533 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">driverQuit([TestResult name=verifyDetailsUpdationPossibleInManageContactPage status=SUCCESS method=ManageContac...)</span>
-                <span class="method-start">7102 ms</span>
+                <span class="method-name">driverQuit([TestResult name=verifyUserIsAbleToAddNewSubCategoryWithValidDetails status=SUCCESS method=SubCatego...)</span>
+                <span class="method-start">9717 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">initializebrowser(Chrome)</span>
+                <span class="method-start">9720 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyUserIsAbleToSearchNonExistingSubCategoryItem</span>
+                <span class="method-start">12637 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">driverQuit([TestResult name=verifyUserIsAbleToSearchNonExistingSubCategoryItem status=SUCCESS method=SubCategor...)</span>
+                <span class="method-start">16374 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

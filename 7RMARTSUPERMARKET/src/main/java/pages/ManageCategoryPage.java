@@ -27,6 +27,10 @@ public class ManageCategoryPage {
 @FindBy(xpath="//input[@name='show_home'and@value='yes']") WebElement leftmenubutton;
 @FindBy(xpath="//button[@type='submit' and@class='btn btn-danger']")WebElement savebutton;
 @FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement alertmessage;
+@FindBy(xpath="//a[text()=' Search']") WebElement searchfield;
+@FindBy(xpath="//input[@placeholder='Category']")WebElement entercategoryname;
+@FindBy(xpath="//button[text()='Search']") WebElement searchname;
+@FindBy(xpath="//center[text()='.........RESULT NOT FOUND.......']") WebElement resultnotfoundmessage;
 
 public ManageCategoryPage clickOnNewButton()
 {   gu.clickOnElement(newbutton);
@@ -84,8 +88,34 @@ public boolean alertMessageIsDisplayed()
 	return alertmessage.isDisplayed();
 }
 
-
+public ManageCategoryPage clickOnSearchButton()
+{
+   searchfield.click();
+   return this;
 }
+
+public ManageCategoryPage enterCategoryName2()
+{
+	entercategoryname.sendKeys("VegetablesAndNuts");
+	return this;
+}
+
+public ManageCategoryPage  clickOnSearchButton2()
+
+{ 
+searchname.click();
+return this;
+	
+}
+
+public boolean resultNotFoundMessageIsDisplayed()
+{
+return resultnotfoundmessage.isDisplayed();
+}
+}
+
+
+
 
 
 

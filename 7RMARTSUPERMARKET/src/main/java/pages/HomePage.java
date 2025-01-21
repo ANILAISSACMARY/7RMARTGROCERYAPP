@@ -43,11 +43,6 @@ public ManageContactPage clickOnManageContactButton() {
 	return new ManageContactPage(driver);
 }
 
-public CategoryPage clickOnCategoryButton()
-{
-	categoryfield.click();
-	return new CategoryPage(driver);
-}
 public ManageFooterTextPage clickOnManageFooterButton()
 {
 	managefootertextbutton.click();

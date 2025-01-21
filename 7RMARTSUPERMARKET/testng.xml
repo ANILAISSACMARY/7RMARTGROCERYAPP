@@ -7,7 +7,7 @@
 	<test threadcount="3" name="myTest">
 		
 	<classes>
-	<class name="testcases.CategoryTest"></class>
+	
 	<class name="testcases.LoginPageTest"></class>
 	<class name="testcases.ManageCategoryTest"></class>
 	<class name="testcases.ManageContactTest"></class>
@@ -15,7 +15,8 @@
 	<class name="testcases.ManageGiftAndVouchersTest"></class>
 	<class name="testcases.ManageNewsTest"></class>
 	<class name="testcases.SubCategoryTest"></class>
-
+	
+	
 	
     </classes>
 		

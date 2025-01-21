@@ -15,24 +15,24 @@ public class ManageNewsTest extends BaseClass {
 	ManageNewsPage mnp;
 	
   @Test(groups="smoke")
-  public void verifyNewsCanEnteredInManageNewsPage() throws IOException {
+  public void verifyUserIsAbleToAddNewNewsWithValidDetails() throws IOException {
 	  lp=new LoginPage(driver);
 	  hp=lp.loginByUsingExcelData();
 	  mnp=hp.clickOnManageNewsButton().clickOnNewTab().enterNewsDetails().clickOnSaveButton();
 	  boolean expectedresult=true;
 	  boolean actualresult=mnp.isAlertMessageIsDisplayed();
-	  Assert.assertEquals(expectedresult, actualresult,Constants.MNP_verifyNewsCanEnteredInManageNewsPage);  
+	  Assert.assertEquals(expectedresult, actualresult,Constants.MNP_verifyUserIsAbleToAddNewNewsWithValidDetails);  
 	 }
   
    @Test(retryAnalyzer=retry.Retry.class)
   
-  public void verifyNewsSearchPossibleInManageNewsPage() throws IOException
+  public void verifyUserIsAbleToSearchNonExistingNews() throws IOException
   {  lp=new LoginPage(driver);
   hp=lp.loginByUsingExcelData();
   mnp=hp.clickOnManageNewsButton().clickOnSearchButton().enterTheNewsDetails().clickOnSearchButton2();
   boolean expectedresult=true;
   boolean actualresult=true;
-  Assert.assertEquals(expectedresult, actualresult,Constants.MNP_verifyNewsSearchPossibleInManageNewsPage);
+  Assert.assertEquals(expectedresult, actualresult,Constants.MNP_verifyUserIsAbleToSearchNonExistingNews);
 	
   }
   

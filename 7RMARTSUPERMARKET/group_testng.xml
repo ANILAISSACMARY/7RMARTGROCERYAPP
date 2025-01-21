@@ -9,7 +9,7 @@
 		<classes>
 			
 <class name="testcases.ManageNewsTest"></class>
-<class name="testcases.CategoryTest"></class>
+<class name="testcases.ManageGiftAndVouchersTest"></class>
 
  </classes>
 		
